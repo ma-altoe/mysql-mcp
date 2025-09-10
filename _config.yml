@@ -1,6 +1,6 @@
 theme: minima
-title: "Serena - Documentação"
-description: "Documentação do projeto Serena e guias de configuração"
+title: "GitHub Copilot com MySQL MCP Server"
+description: "Guia de configuração do MySQL MCP Server com GitHub Copilot"
 
 # GitHub Pages configuration
 plugins:
