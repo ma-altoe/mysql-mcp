@@ -1,0 +1,46 @@
+theme: minima
+title: "Serena - Documentação"
+description: "Documentação do projeto Serena e guias de configuração"
+
+# GitHub Pages configuration
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+# Markdown processor
+markdown: kramdown
+highlighter: rouge
+
+# Collections
+collections:
+  docs:
+    output: true
+    permalink: /:collection/:name/
+
+# Navigation
+header_pages:
+  - docs/mysql-mcp-server-setup.md
+
+# Social links
+github_username: luizalabs
+
+# Build settings
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - target/
+  - src/
+  - pom.xml
+  - Makefile
+  - mvnw
+  - mvnw.cmd
