@@ -2,45 +2,13 @@ theme: minima
 title: "GitHub Copilot com MySQL MCP Server"
 description: "Guia de configuração do MySQL MCP Server com GitHub Copilot"
 
-# GitHub Pages configuration
+# Plugins padrão do GitHub Pages (o minima já os gerencia bem)
 plugins:
   - jekyll-feed
-  - jekyll-sitemap
 
-# Markdown processor
-markdown: kramdown
-highlighter: rouge
+# Informações para o rodapé e links sociais (opcional)
+github_username: ma-altoe
+# author: "Seu Nome" # Você pode adicionar seu nome aqui
 
-# Collections
-collections:
-  docs:
-    output: true
-    permalink: /:collection/:name/
-
-# Navigation
-header_pages:
-  - docs/mysql-mcp-server-setup.md
-
-# Social links
-github_username: luizalabs
-
-# Build settings
-sass:
-  sass_dir: _sass
-  style: compressed
-
-# Exclude from processing
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - node_modules
-  - vendor/
-  - .sass-cache/
-  - .jekyll-cache/
-  - gemfiles/
-  - target/
-  - src/
-  - pom.xml
-  - Makefile
-  - mvnw
-  - mvnw.cmd
+# O resto da configuração não é estritamente necessário para um site simples,
+# pois o tema Minima e o GitHub Pages usam padrões inteligentes.
