@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Database MCP Configuration</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;
+            line-height: 1.5;
+            color: #24292f;
+            background-color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1012px;
+            margin: 0 auto;
+            padding: 40px 16px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 48px;
+        }
+        .header h1 {
+            font-size: 32px;
+            font-weight: 600;
+            margin-bottom: 16px;
+            color: #24292f;
+        }
+        .header p {
+            font-size: 18px;
+            color: #656d76;
+            margin-bottom: 0;
+        }
+        .options {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 24px;
+            margin-top: 32px;
+        }
+        .option-card {
+            border: 1px solid #d0d7de;
+            border-radius: 6px;
+            padding: 24px;
+            text-align: center;
+            transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+            background-color: #f6f8fa;
+        }
+        .option-card:hover {
+            border-color: #0969da;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        }
+        .option-card h2 {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 16px;
+            color: #24292f;
+        }
+        .option-card p {
+            color: #656d76;
+            margin-bottom: 24px;
+            font-size: 16px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            font-size: 16px;
+            font-weight: 500;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: background-color 0.2s ease-in-out;
+            border: 1px solid transparent;
+        }
+        .btn-primary {
+            background-color: #0969da;
+            color: #ffffff;
+        }
+        .btn-primary:hover {
+            background-color: #0550ae;
+            color: #ffffff;
+        }
+        .btn-secondary {
+            background-color: #21262d;
+            color: #ffffff;
+        }
+        .btn-secondary:hover {
+            background-color: #30363d;
+            color: #ffffff;
+        }
+        .about {
+            margin-top: 48px;
+            padding: 24px;
+            background-color: #f6f8fa;
+            border-radius: 6px;
+            border: 1px solid #d0d7de;
+        }
+        .about h3 {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 16px;
+            color: #24292f;
+        }
+        .about p {
+            color: #656d76;
+            margin-bottom: 12px;
+        }
+        .database-icon {
+            font-size: 48px;
+            margin-bottom: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>🗄️ Database MCP Configuration</h1>
+            <p>Configure servidores MCP (Model Context Protocol) para interação com bancos de dados</p>
+        </header>
+
+        <div class="options">
+            <div class="option-card">
+                <div class="database-icon">🐬</div>
+                <h2>MySQL</h2>
+                <p>Configure um servidor MCP para MySQL, permitindo que assistentes de IA interajam de forma segura com bancos de dados MySQL.</p>
+                <a href="mysql.html" class="btn btn-primary">Configurar MySQL</a>
+            </div>
+
+            <div class="option-card">
+                <div class="database-icon">🍃</div>
+                <h2>MongoDB</h2>
+                <p>Configure um servidor MCP para MongoDB, permitindo que assistentes de IA interajam com bancos de dados NoSQL MongoDB.</p>
+                <a href="mongodb.html" class="btn btn-secondary">Configurar MongoDB</a>
+            </div>
+        </div>
+
+        <div class="about">
+            <h3>📋 Sobre MCP (Model Context Protocol)</h3>
+            <p>O Model Context Protocol é um padrão aberto que permite que assistentes de IA se conectem de forma segura a diversas fontes de dados e ferramentas.</p>
+            <p>Com MCP, você pode:</p>
+            <ul>
+                <li>Executar consultas diretamente nos bancos de dados</li>
+                <li>Analisar estruturas de tabelas e coleções</li>
+                <li>Gerar relatórios baseados nos dados</li>
+                <li>Otimizar queries e operações</li>
+                <li>Monitorar performance em tempo real</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
